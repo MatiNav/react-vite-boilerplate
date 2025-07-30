@@ -1,12 +1,12 @@
 # React + TypeScript + Vite + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules, plus Tailwind CSS and Vitest configuration.
+This template repository provides a minimal setup to get React working in Vite with HMR and some ESLint rules, plus Tailwind CSS and Vitest configuration.
 
 ### Clone
 
 To create a repo from this one:
 ```bash
-gh repo create <new_repo_name> --template MatiNav/react-vite-boilerplate --clone --public && npm i
+gh repo create <new_repo_name> --template MatiNav/react-vite-boilerplate --clone --public && cd <new_repo_name> && npm i
 ```
 
 
