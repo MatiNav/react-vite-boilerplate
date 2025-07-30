@@ -1,19 +1,22 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules, plus Tailwind CSS and Vitest configuration.
 
-Currently, two official plugins are available:
+### Clone
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To create a repo from this one:
+```bash
+gh repo create <new_repo_name> --template MatiNav/react-vite-boilerplate --clone --public && npm i
+```
 
-## Tailwindcss
 
-This project is already configure with tailwindcss
+### Tailwind CSS
 
-## Vitest
+This project is already configure with Tailwind CSS to be used across the entire app.
 
-This project is configured to use vitest as the testing library. It was installed following this steps:
+### Vitest
+
+This project is configured to use vitest as the testing library. It was installed following these steps:
 
 1. Install dependencies
 ```sh
@@ -21,14 +24,14 @@ npm i -D vitest jsdom @testing-library/react @testing-library/user-event @testin
 ```
 2. Create a [./test/setup.ts](./test/setup.ts) file with the code that will run after each test
 3. Create [./vitest.config.ts](./vitest.config.ts) to define vitest config
-4. Add `test: vitest` command in the package.json
+4. Add `test: vitest` command in package.json
 5. Add this option in the [tsConfig.json](./tsConfig.json)`:
 ```json
 "compilerOptions": {
     "types": ["vitest/globals", "@testing-library/jest-dom"]
   }
 ```
-6. Add the same option inside the compilerOptions in the [tsConfig.app.json](./tsConfig.app.json)`:
+6. Add the same option inside the compilerOptions in the [tsConfig.app.json](./tsConfig.app.json):
 ```json
 "types": ["vitest/globals", "@testing-library/jest-dom"]
 ```
